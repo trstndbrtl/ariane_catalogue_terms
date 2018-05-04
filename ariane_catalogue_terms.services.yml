@@ -1,0 +1,4 @@
+services:
+  ariane_catalogue_terms.building:
+    class: Drupal\ariane_catalogue_terms\ArianeService
+    arguments: []
