@@ -1,0 +1,5 @@
+name: 'Ariane Catalogue Terms'
+type: module
+description: 'Build a Breadcrumb based on vocabulary'
+core: 8.x
+package: 'MM'

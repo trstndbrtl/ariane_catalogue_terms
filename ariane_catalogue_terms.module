@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains ariane_catalogue_terms.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ariane_catalogue_terms_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ariane_catalogue_terms module.
+    case 'help.page.ariane_catalogue_terms':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Build a Breadcrumb based on vocabulary') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ariane_catalogue_terms_theme() {
+  return [
+    'ariane_catalogue_terms' => [
+      'render element' => 'children',
+    ],
+  ];
+}
